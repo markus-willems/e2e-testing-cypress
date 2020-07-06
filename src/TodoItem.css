@@ -1,0 +1,17 @@
+.todo-item {
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+
+.btn {
+    float: right;
+}
+
+.btn-delete {
+    margin-left: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
