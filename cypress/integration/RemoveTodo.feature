@@ -4,5 +4,5 @@ Feature: Remove todo item
 
     Scenario: Remove a todo item
         Given I open the todo interface
-        When I press the "delete" button for "do stuff"
-        Then "do stuff" is deleted from the todo list
+        When I press the "delete" button for "Mow lawn"
+        Then "Mow lawn" is deleted from the todo list

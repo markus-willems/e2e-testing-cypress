@@ -350,6 +350,31 @@ module.exports = function (webpackEnv) {
                                 name: 'static/media/[name].[hash:8].[ext]',
                             },
                         },
+                        {
+                            test: /\.feature$/,
+                            use: [
+                                {
+                                    loader: 'cypress-cucumber-preprocessor/loader',
+                                },
+                            ],
+                        },
+                        {
+                            test: /\.features$/,
+                            use: [
+                                {
+                                    loader: 'cypress-cucumber-preprocessor/lib/featuresLoader',
+                                },
+                            ],
+                        },
+                        {
+                            test: /\.ts$/,
+                            exclude: [/node_modules/],
+                            use: [
+                                {
+                                    loader: 'ts-loader',
+                                },
+                            ],
+                        },
                         // Process application JS with Babel.
                         // The preset includes JSX, Flow, TypeScript, and some ESnext features.
                         {
